@@ -1,22 +1,3 @@
-"""
-Meeting-to-Action-Items AI — single-file Streamlit app (NO API KEY NEEDED).
-
-Everything runs on free, local, open-source NLP models:
-  - spaCy            -> Named Entity Recognition (people, orgs, dates)
-  - DistilBART        -> abstractive summarization
-  - DistilBERT-SQuAD  -> extractive question answering
-
-No OpenAI/Gemini/any paid API required. Models download once on first run
-and are cached, so subsequent loads are fast.
-
-Run locally:
-    streamlit run app.py
-
-Deploy: push this single file + requirements.txt + packages.txt
-to a GitHub repo, then connect it on https://share.streamlit.io with
-main file path = app.py. No secrets need to be configured.
-"""
-
 import io
 import re
 import csv
